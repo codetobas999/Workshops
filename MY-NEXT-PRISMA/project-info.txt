@@ -49,5 +49,20 @@ DATABASE_URL="postgresql://myuser:mypassword@localhost:6432/mydb?schema=public"
 -------------------
 Step 
 1. Start Docker Compose for db prosgresql 7 pgadmin : docker-compose up -d
-2. start app : npm run dev
-3. Stop Docker compose : docker compose down
+2. Case New Project :  npm install
+3. start app : npm run dev
+4. Stop Docker compose : docker compose down
+
+------------------------------------------------------------------
+create category
+post : http://localhost:3000/api/categories
+       {"name":"Tech-1"} 
+       {"name":"Tech-2"} 
+
+create post
+post : http://localhost:3000/api/posts
+{
+  "title":"title-1",
+  "content":"content-1",
+  "categoryId":1
+}
