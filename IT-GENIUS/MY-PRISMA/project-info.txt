@@ -1,0 +1,22 @@
+-------------------
+Step 
+1. Start Docker Compose for db prosgresql : docker-compose up -d
+2. Create DB from prisma(NodeEPostAPI) : npx prisma migrate dev --name new_stucture_db 
+3. Case New Project :  npm install
+4. start app : npm start
+5. Stop Docker compose : docker compose down
+
+
+------------------------------------------------------------------
+create category
+post : http://localhost:3000/api/categories
+       {"name":"Tech-1"} 
+       {"name":"Tech-2"} 
+
+create post
+post : http://localhost:3000/api/posts
+{
+  "title":"title-1",
+  "content":"content-1",
+  "categoryId":1
+}
